@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 module "s3-webapp" {
-  source  = "app.terraform.io/hashicorpaya/s3-webapp/aws"
+  source  = "https://app.terraform.io/app/hashicorpaya"
   name        = var.name
   region = var.region
   prefix = var.prefix
