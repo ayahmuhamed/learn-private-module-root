@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 module "s3-webapp" {
-  source  = "app.terraform.io/hashicorpaya/workspaces/learn-private-module-root"
+  source  = "app.terraform.io/hashicorpaya/"
   name        = var.name
   region = var.region
   prefix = var.prefix
